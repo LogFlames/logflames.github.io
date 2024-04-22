@@ -1,1 +1,1072 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elias Lundell</title>
+
+  <!--
+    - favicon
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  -->
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Elias Lundell" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Elias Lundell">Elias Lundell</h1>
+
+          <p class="title">
+          Student @ KTH
+          <br>
+          Research Assistant @ KTH
+          <br>
+          Metaverse Developer @ Around the Corner
+          </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ellundel@kth.se" class="contact-link">ellundel@kth.se</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone/Signal</p>
+
+              <a href="tel:+46703888673" class="contact-link">+(46)70-388 86 73</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-12-18">December 18, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Stockholm, Sweden</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/logflames/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.facebook.com/elias.lundell.03" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/elias-lundell/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Posters</button>
+          </li>
+
+          <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+          -->
+
+          <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+          -->
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a student at KTH, currently studying Engineering Mathematics. TODO - fill in text
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <!-- 
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!--
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>NAME SURNAME</h4>
+
+              <time datetime="YYYY-MM-DD">DD MONTH, YYYY</time>
+
+              <div data-modal-text>
+                <p>
+                TEXT HERE
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+
+        </div>
+
+
+
+        <!--
+          - clients
+        -->
+
+        <!--
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Royal Institute of Technology (KTH), Sweden</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                Currently studying Engineering Mathematics at KTH in Stockholm. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mattekollo (Summer Math Camp)</h4>
+
+              <span>Summers of 2016 — 2021</span>
+
+              <p class="timeline-text">
+              I participated at <a href="https://mattekollo.se">Mattekollo</a> as a pupil each summer during 2016 to 2019. Mattekollo gathers extra interested students for 10 days of intensive learning and social exchange. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Norra Real</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="timeline-text">
+                Studied Natural Sciences, Mathematics speciallization, at Norra Reals Gymnasium in Stockholm.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Täby Musikklasser</h4>
+
+              <span>2013 — 2019</span>
+
+              <p class="timeline-text">
+                In addition to the normal elementary education I went to a music class at Näsbydalskolan in Täby. Singing in a choir every day, large performances multiple times every year.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Assistant</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+              Working as Research Assistant in the <a href="https://chains.proj.kth.se">CHAINS</a> research group at KTH.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Leader at Mattekollo (Summer Math Camp)</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+              After becoming to old to participate as a pupil at <a href="https://mattekollo.se">Mattekollo</a>, I imediatelly started as a teacher, focusing on programming. The work consist both of creating lessons combined with responsibility for the pupils.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Metaverse Developer</h4>
+
+              <span>2021 — Present</span>
+
+              <p class="timeline-text">
+              Working at <a href="https://aroundthecorner.se">Around the Corner</a>. 
+              I add interactivity and tools to social VR platforms such as Mozilla Hubs and AltspaceVR. 
+              Examples of what I've added includes quizzes, online polls, enhancing presentations with audio and visual effects within the metaverse, as well as digitals twins showing real time data from IoT devices.
+              This has been done using the respective platforms API aswell as modifying the client when possible.
+              </p>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Supplementary Instructions Leader</h4>
+
+              <span>Fall of 2023</span>
+
+              <p class="timeline-text">
+              Worked as group leader for Supplementary Instruction sessions in the courses SF1672 Linear algebra and SF1673 Analysis in one variable at KTH.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Analysis and Database Programmer</h4>
+
+              <span>Summers of 2020 - 2023</span>
+
+              <p class="timeline-text">
+              Worked at the <a href="https://nrm.se">Swedish Museum of Natural History</a>.
+              I have worked during the summers to build tools for automatic workflows and to categorize data using R and shiny.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sailing Instructor</h4>
+
+              <span>2019 - 2021</span>
+
+              <p class="timeline-text">
+              Worked at Trälhavets Båtklub, TBK, as a sailing instructor both on weekly practice sessions and during summer camps. 
+              In 2021 I was head instructor for weekly practice sessions.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="color-wand-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Volunteering</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Student Social Activities</h4>
+
+              <span>2022 - 2024</span>
+
+              <p class="timeline-text">
+              2024 Secretary (Borad member) in the Physics Chapter
+              <br>
+              2023 - 2024 Directeur (President) of Kårspexet
+              <br>
+              2022 - 2023 President of Fysikalen, the Physics Chapter's spex
+              <br>
+              2022 - 2024 Mattermästare, responsible for the Physics Chapter communication plattform <a href="https://mattermost.se">mattermost.se</a>.
+              </p>
+
+            </li>
+
+          </ol>
+        </section>
+
+        <!--
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        -->
+      </article>
+
+
+
+
+
+      <!--
+        - #PROJECTS/PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>C++</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Python</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Typescript</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>R</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Game</button>
+            </li>
+
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>C++</button>
+              </li>
+
+              <li class="filter-item">
+                  <button data-filter-btn>Python</button>
+              </li>
+
+              <li class="filter-item">
+                  <button data-filter-btn>Typescript</button>
+              </li>
+
+              <li class="filter-item">
+                  <button data-filter-btn>R</button>
+              </li>
+
+              <li class="filter-item">
+                  <button data-filter-btn>Web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Game</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="c++">
+              <a href="https://github.com/logflames/ant-simulation">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ants-1.jpg" alt="Ants" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Diploma Project (Gymnasium): Effects of Population Size on Food-collecting Efficiency in Simulated Swarms of Pheromone-guided Robots</h3>
+                <h4 class="project-desc">A simulation of ants/agents following each other's pheromones. We then test how the number of ants/agents affects their ability to pickup food and bring it home to their nest. The base is highly inspired by Sebastian Lague's video "Code Adventures: Ant and Slime Simulations". All simulation is done in a compute shader enabling a very high number of agents.</h4>
+
+                <p class="project-category">C++</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web typescript">
+              <a href="https://github.com/logflames/snabba-schemat">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/snabba-schemat-1.jpg" alt="Snabba Schemat" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Snabba Schemat: A schedule proxy to load and cache schedules</h3>
+                <h4 class="project-desc">A schedule proxy, both back- and frontend, which loads and cashes a schedule from Skola24. This was created due to Stockholm's "Skolplattformen"'s incredibly stupid and long login process. Snabba Schemat saves the login in cookies and cashes it on the server, giving instant access as well as export to .ical to add to google calendar.</h4>
+
+                <p class="project-category">Web, Typescript</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game">
+              <a href="https://ldjam.com/users/logflames/games">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ldjam-1.jpg" alt="Ludum Dare" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Games made for Ludum Dare</h3>
+                <h4 class="project-desc">Ludum Dare is a game-making competition where you create a game, entirely from scratch, in 48h. My entries are all (so far) made in Unity, and all but the first two were made together with a 3d-Designer friend.</h4>
+
+                <p class="project-category">Game</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python">
+              <a href="https://github.com/logflames/mattermost-bots/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mattermost-bots-1.jpg" alt="Mattermost Bots" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mattermost Bots for the Physics Chapter</h3>
+                <h4 class="project-desc">The Physics Chapter uses the open source communication platform Mattermost. To expand usability I have written a number of bots for this. These bots do everything from countdown to big events, adding new users to the correct default channels, adding chapter members to specific course-channels based on a data-extract from ladok, provide eastereggs such as the head of the reception is allways online. The bots also provide biggger functionality such as allowing real-time translation of any message using GPT 3.5 and uploading posts to the Physics Chapter website from a mattermost message.</h4>
+
+                <p class="project-category">Python</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="r">
+              <a href="https://github.com/CGI-NRM/GenotypeCheck">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/genotype-check-1.jpg" alt="Genotype Check" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Genotype Check: Matching bear DNA to group samples into individuals</h3>
+                <h4 class="project-desc">A R package and Shiny app that loads sequenced bear DNA and categorizes new data against a database of already known individuals. Including easy of use features such as a map, easily sorting the non-problematic individuals and easy to manually review edge-cases.</h4>
+
+                <p class="project-category">R</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python">
+              <a href="https://github.com/logflames/folje">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/folje-1.jpg" alt="Folje" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Follow Spot</h3>
+                <h4 class="project-desc">A python program that takes in a camera stream of a stage and converts the mouse position to pan/tilt instructions for a moving head fixture.</h4>
+
+                <p class="project-category">Python</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="posters" data-page="posters">
+
+        <header>
+          <h2 class="h2 article-title">Posters</h2>
+        </header>
+
+        <section class="posters">
+
+          <ul class="poster-list">
+
+            <li class="poster-item  active">
+              <a href="./assets/posters/CHAINS Fractureiser.pdf">
+
+                <figure class="poster-img">
+                  <div class="poster-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/posters/CHAINS Fractureiser.jpg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="poster-title">Fractureiser: Attack on Minecraft Mods</h3>
+                <h4 class="poster-desc">An explanation of the Fractureiser virus spread in the minecraft modding scene in 2023. Created for the 3rd KTH Workshop on the Software Supply Chain poster session.</h4>
+              </a>
+            </li>
+
+            <li class="poster-item  active">
+              <a href="./assets/posters/LinAlg Markov Poster.pdf">
+
+                <figure class="poster-img">
+                  <div class="poster-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/posters/LinAlg Markov Poster.jpg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="poster-title">SF1672 Linear Algebra - Markov Chains</h3>
+                <h4 class="poster-desc">A project within the corse SF1672 Linear Algebra, we created a Markov Chain that is trained on all songs in the Physics Chapter's song book, and which can then create novel (albeit not very great) songs from a seed-word.</h4>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!--
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+      -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <!--
+      <article class="contact" data-page="contact">
+
+      <header>
+        <h2 class="h2 article-title">Contact</h2>
+      </header>
+
+      <section class="mapbox" data-mapbox>
+        <figure>
+          <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+        width="400" height="300" loading="lazy"></iframe>
+        </figure>
+      </section>
+
+      <section class="contact-form">
+
+        <h3 class="h3 form-title">Contact Form</h3>
+
+        <form action="#" class="form" data-form>
+
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          </div>
+
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+          <button class="form-btn" type="submit" disabled data-form-btn>
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+
+        </form>
+
+      </section>
+
+    </article>
+    -->
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
