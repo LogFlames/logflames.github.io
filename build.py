@@ -57,7 +57,7 @@ with open("text.toml", "rb") as f:
             project_tags.add(tag)
 
     for tag in sorted(list(project_tags)):
-        projects_categories_filteritems += f""""
+        projects_categories_filteritems += f"""
         <li class="filter-item">
           <button data-filter-btn>{tag}</button>
         </li>"""
@@ -123,8 +123,7 @@ with open("index.html.template", "r", encoding = "utf-8") as f:
 print("Writing 'index.html'...")
 
 
-#minified = htmlmin.minify(index, remove_empty_space=True)
-minified = index
+minified = htmlmin.minify(index, remove_empty_space=True)
 
 with open("index.html", "w+", encoding = "utf-8") as f:
     f.write(minified)
