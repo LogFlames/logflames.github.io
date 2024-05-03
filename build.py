@@ -12,9 +12,9 @@ projects_categories_selectitems = ""
 projects = ""
 posters = ""
 
-print("Reading 'text.toml'...")
+print("Reading 'content.toml'...")
 
-with open("text.toml", "rb") as f:
+with open("content.toml", "rb") as f:
     data = tomllib.load(f)
 
     about_name = data["about"]["name"]
