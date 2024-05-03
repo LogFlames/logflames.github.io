@@ -137,7 +137,7 @@ title = "Genotype Check: Matching bear DNA to group samples into individuals"
 description = """A R package and Shiny app that loads sequenced bear DNA and categorizes new data against a database of already known individuals. Including easy of use features such as a map, easily sorting the non-problematic individuals and easy to manually review edge-cases."""
 link = "https://github.com/CGI-NRM/GenotypeCheck"
 img = "./assets/images/genotype-check-1.jpg"
-img-alt = "Empty image so far"
+img-alt = "DNA helix"
 tags = ["R"]
 
 [[projects]]
