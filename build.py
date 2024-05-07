@@ -123,7 +123,7 @@ with open("index.html.template", "r", encoding = "utf-8") as f:
 print("Writing 'index.html'...")
 
 
-minified = htmlmin.minify(index, remove_empty_space=True)
+minified = htmlmin.minify(index, remove_empty_space=True, remove_comments=True)
 
 with open("index.html", "w+", encoding = "utf-8") as f:
     f.write(minified)
