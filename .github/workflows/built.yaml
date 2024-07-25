@@ -13,7 +13,13 @@ jobs:
     steps:
     # Checkout the repository
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+
+    # Setup python
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
 
     # Prevent infinite loop by skipping commits made by GitHub Actions bot
     - name: Check for GitHub Actions bot commit
@@ -27,6 +33,7 @@ jobs:
     # Run the shell script
     - name: Run shell script
       run: |
+        python3 -m pip install -r requirements.txt
         python3 build.py
 
     # Configure Git
