@@ -1,4 +1,4 @@
-name: Combine pushed keys into combined.txt
+name: Build index.html from template and data
 
 # Trigger the workflow on push to any branch
 on: 
