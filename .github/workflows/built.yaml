@@ -1,0 +1,45 @@
+name: Combine pushed keys into combined.txt
+
+# Trigger the workflow on push to any branch
+on: 
+  push:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Prevent infinite loop by skipping commits made by GitHub Actions bot
+    - name: Check for GitHub Actions bot commit
+      id: check_commit
+      run: |
+        if git log -1 --pretty=%B | grep -q '\[skip ci\]'; then
+          echo "Commit made by GitHub Actions bot. Skipping the rest of the job."
+          exit 0
+        fi
+
+    # Run the shell script
+    - name: Run shell script
+      run: |
+        python3 build.py
+
+    # Configure Git
+    - name: Set up Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    # Commit the new file
+    - name: Commit new file
+      run: |
+        git add index.html
+        git commit -m "Build [skip ci]"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
