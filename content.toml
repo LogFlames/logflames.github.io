@@ -142,11 +142,11 @@ tags = ["R"]
 
 [[projects]]
 title = "Follow Spot"
-description = """A python program that takes in a camera stream of a stage and converts the mouse position to pan/tilt instructions for a moving head fixture."""
+description = """A program that allows you to use a camera and your computer to control a follow spot pan/tilt with sACN. The backend is written in Go and the frontent with Svelte, using wails to create an cross-plattform application."""
 link = "https://github.com/logflames/folje"
 img = "./assets/images/folje-1.jpg"
 img-alt = "A virtual follow spot shining on a model of a person"
-tags = ["Python"]
+tags = ["Go", "Web"]
 
 [[posters]]
 title = "SF1693 Partiential Differential Equations - Vibrations of a drumhead"
