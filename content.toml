@@ -105,7 +105,7 @@ tags = ["C++"]
 [[projects]]
 title = "Snabba Schemat: A schedule proxy to load and cache schedules"
 description = """A schedule proxy, both back- and frontend, which loads and cashes a schedule from Skola24.
-This was created due to Stockholm "Skolplattformen"'s incredibly stupid and long login process.
+This was created due to Stockholm "Skolplattformen"'s incredibly conveluted and time-consuming login process.
 Snabba Schemat saves the login in cookies and cashes it on the server, giving instant access as well as an export to .ical to add to google calendar."""
 link = "https://github.com/logflames/snabba-schemat"
 img = "./assets/images/snabba-schemat-1.jpg"
