@@ -149,7 +149,7 @@ img-alt = "A virtual follow spot shining on a model of a person"
 tags = ["Go", "Web"]
 
 [[posters]]
-title = "SF1693 Partiential Differential Equations - Vibrations of a drumhead"
+title = "SF1693 Partial Differential Equations - Vibrations of a drumhead"
 description = "A project to explore analytical and numerical methods of a vibrating drumhead modelled as a vibrating membrane fastened around the border."
 pdf = "./assets/posters/SF1693 PDE Project.pdf"
 img = "./assets/posters/SF1693 PDE Project.jpg"
