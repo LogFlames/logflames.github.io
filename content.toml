@@ -168,3 +168,10 @@ description = "A project within the corse SF1672 Linear Algebra, we created a Ma
 pdf = "./assets/posters/LinAlg Markov Poster.pdf"
 img = "./assets/posters/LinAlg Markov Poster.jpg"
 img-alt = ""
+
+[[posters]]
+title = "DDC4j: Diverse double-compiling for Java"
+description = "A poster on my bachelor thesis, DDC4j. Diverse double-compiling for Java. Created for the 4th KTH Workshop on the Software Supply Chain poster session."
+pdf = "./assets/posters/CHAINS 4th Workshop DDC4j.pdf"
+img = "./assets/posters/CHAINS 4th Workshop DDC4j.jpg"
+img-alt = ""
