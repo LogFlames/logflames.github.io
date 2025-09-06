@@ -1,5 +1,6 @@
 import tomllib
 import htmlmin
+import datetime
 
 about_name = ""
 about_position = ""
@@ -87,6 +88,7 @@ with open("content.toml", "rb") as f:
               </a>
         </li>"""
 
+    data["posters"].sort(key = lambda poster: datetime.datetime.strptime(poster["date"], "%Y-%m-%d"), reverse = True)
     for poster in data["posters"]:
         posters += f"""
         <li class="poster-item  active">
